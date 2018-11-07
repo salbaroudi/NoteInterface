@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./dynamictextblob.js"></script>
+    <script type="text/javascript" src="./interface.js"></script>
+    <script type="text/javascript" src="./jsonhttp.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./interface.css">
+  </head>
+  <body class= "all">
+    <div id="modeselect" class="all modeselectcontain">
+      <div id="addmode" title="Add Mode" class="all modeselectbuttoff">&#x271A;</div>
+      <div id="displaymode" title="Display Mode" class="all modeselectbuttoff">&#10026;</div>
+      <div id="relationmode" title="Relation Mode" class="all modeselectbuttoff">&#8916;</div>
+    </div>
+    <div id="modeoptsinputs" class="all modeoptioncontain">
+      <div id="randomcontain" class="all randomoptcontain">
+        <div id="randomopt" title="Random Option" class="all opbutton">&#9736;</div>
+        <div id="timeopt" title="Recent Tags Option" class="all opbutton">&#x29d6;</div>
+      </div>
+      <div id="addmodecontain" class="all addmodecontain">
+        <div id="intersectopt" title="Intersect Operation" class="all opbutton">&#8898;</div>
+        <div id="unionopt" title="Union Operation" class="all opbutton">&#8899;</div>
+        <div id="diffopt" title="Difference Operation" class="all opbutton">&#8622;</div>
+        <input id="inputtext" class="all inputtext" type="text">
+        <div id="submitpull" class="all opbutton"> Pull &#11144;</div>
+      </div>
+    </div>
+    <div id="displaymodeopts" class="all optsbeneath">
+      <div id="textonlyopt" class="all opbutton">Hide Metadata</div>
+    </div>
+    <div id="addtextblobs" class="all optsbeneath">
+      <div id="newtbopt" class="all opbutton">Add New Text Blob &oplus;</div>
+      <div id="submitpush" class="all opbutton"> Push &#11146;</div>
+    </div>
+    <div id="workspace" class="all workspacecontain">
+      <pre id="diagbox"></pre>
+      Workspace
+    <div>
+  </body>
+</html>
+<!--
+1) The order of class elements in CSS doc determines their priority when ANDED together for an element. Higher priority elements
+must be put further down the document, strangely.
+2) Instead of making lots of small files, I am just going to develop the basic version with this file. Sometimes you just need to make
+the jump.
+3) https://stackoverflow.com/questions/11498068/how-to-use-external-js-files; this is needed to edit JS in DevTools; can't do it in static html page.
+4) https://www.w3schools.com/JS/js_dates.asp
+5) https://www.w3schools.com/JS/js_object_definition.asp
+-->
